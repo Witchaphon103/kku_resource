@@ -1,0 +1,33 @@
+{
+    "resources": [
+      {
+        "id": "r001",
+        "title": "โปสเตอร์กิจกรรม 2024",
+        "description": "สำหรับกิจกรรม Open House",
+        "type": "graphic",
+        "category": "campus",
+        "tags": ["กิจกรรม", "โปสเตอร์"],
+        "fileUrl": "/mock/resources/poster-2024.png",
+        "thumbnailUrl": "/mock/resources/thumb-poster-2024.png",
+        "uploadedBy": "admin",
+        "downloadCount": 15,
+        "createdAt": "2024-04-01T10:00:00Z",
+        "updatedAt": "2024-04-01T10:00:00Z"
+      },
+      {
+        "id": "r002",
+        "title": "วิดีโอแนะนำการเรียนแพทย์",
+        "description": "แนะแนวหลักสูตรแพทย์ มข.",
+        "type": "video",
+        "category": "medical",
+        "tags": ["วิดีโอ", "แพทย์"],
+        "fileUrl": "/mock/resources/video-med.mp4",
+        "thumbnailUrl": "/mock/resources/thumb-video-med.jpg",
+        "uploadedBy": "admin",
+        "downloadCount": 42,
+        "createdAt": "2024-04-01T11:00:00Z",
+        "updatedAt": "2024-04-01T11:00:00Z"
+      }
+    ]
+  }
+  

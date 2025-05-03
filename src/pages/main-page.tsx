@@ -4,13 +4,7 @@ import { Badge } from "primereact/badge";
 import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
-  sectionTitle: {
-    color: "var(--surface-0)",
-    marginBottom: "1.5rem",
-    paddingBottom: "0.5rem",
-    borderBottom: "2px solid var(--primary-500)",
-    width: "fit-content",
-  },
+
   categoryCard: {
     backgroundColor: "var(--surface-700)",
     border: "none",
@@ -52,7 +46,7 @@ const MainPage = () => {
 
   return (
     <div className="p-2">
-      <h2 className={classes.sectionTitle}>หมวดหมู่ยอดนิยม</h2>
+      <h2 style={{ color: "#892d05" }}>หมวดหมู่ยอดนิยม</h2>
       <div className="grid">
         <div className="col-12 md:col-4 lg:col-4 p-2">
           <Card className={classes.categoryCard}>
@@ -101,7 +95,7 @@ const MainPage = () => {
         </div>
       </div>
       
-      <h2 className={classes.sectionTitle + " mt-4"}>วิดีโอแนะนำ</h2>
+      <h2 style={{ color: "#892d05" }}>วิดีโอแนะนำ</h2>
       <div className="grid">
         <div className="col-12 md:col-4 lg:col-4 p-2">
           <Card className={classes.categoryCard}>

@@ -11,7 +11,7 @@ import { createUseStyles } from "react-jss";
 import { Divider } from "primereact/divider";
 import { Badge } from "primereact/badge";
 import { useAuth } from "../../contexts/AuthContext";
-
+import logo from "../../assets/logo.png";
 
 const useStyles = createUseStyles({
   mainLayout: {
@@ -20,9 +20,9 @@ const useStyles = createUseStyles({
     minHeight: "100vh",
   },
   header: {
-    backgroundColor: "#6366F1",
+    background: "linear-gradient(to right, #892d05, #d1410c)",
     color: "#ffffff",
-    boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
+    boxShadow: "0 2px 8px rgba(137, 45, 5, 1)",
     position: "sticky",
     top: 0,
     zIndex: 999,
@@ -44,10 +44,10 @@ const useStyles = createUseStyles({
     color: "#ffffff",
     "& img": {
       marginRight: "0.5rem",
-      height: "40px",
+      height: "80px",
     },
     "& span": {
-      fontSize: "1.5rem",
+      fontSize: "1.75rem",
       fontWeight: "700",
     },
   },
@@ -96,9 +96,9 @@ const useStyles = createUseStyles({
     marginBottom: "2rem",
   },
   footer: {
-    backgroundColor: "#1a1f36",
+    background: "linear-gradient(to right, #892d05, #d1410c)",
     color: "#e0e0e0",
-    padding: "2rem 1rem",
+    padding: "1rem 1rem",
     width: "100%",
   },
   footerContent: {
@@ -111,7 +111,7 @@ const useStyles = createUseStyles({
   footerLogo: {
     marginBottom: "1rem",
     "& img": {
-      height: "32px",
+      height: "64px",
     },
   },
   footerLinks: {
@@ -141,7 +141,7 @@ const useStyles = createUseStyles({
     alignItems: "center",
     "& img": {
       marginRight: "0.5rem",
-      height: "32px",
+      height: "56px",
     },
   },
 });
@@ -251,8 +251,8 @@ const MainLayout = () => {
       <header className={classes.header}>
         <div className={classes.headerContent}>
           <Link to="/" className={classes.logo}>
-            <img alt="KKU Logo" src="logo.png" />
-            <span>KKU Resources</span>
+            <img alt="KKU Logo" src={logo} />
+           
           </Link>
 
           <div className={classes.searchBar}>
@@ -270,7 +270,7 @@ const MainLayout = () => {
                 <Avatar
                   icon="pi pi-user"
                   shape="circle"
-                  style={{ backgroundColor: "#e9ecef", color: "#6366F1" }}
+                  style={{ backgroundColor: "#e9ecef", color: "#892d05" }}
                 />
               }
               onClick={(e) => {
@@ -319,7 +319,7 @@ const MainLayout = () => {
       <footer className={classes.footer}>
         <div className={classes.footerContent}>
           <div className={classes.footerLogo}>
-            <img alt="KKU Logo Footer" src="logo.png" />
+            <img alt="KKU Logo Footer" src={logo} />
           </div>
           <div className={classes.footerLinks}>
             <a href="#" className={classes.footerLink}>เกี่ยวกับเรา</a>
